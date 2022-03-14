@@ -1,6 +1,8 @@
+import ResumePDF from './resume/ChristopherResume2022.pdf'
+
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
+  homepage: 'https://chrimyn234.github.io/cleanfolio/',
   title: 'JS.',
 }
 
@@ -8,11 +10,12 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Christopher Prawira',
   role: 'Software Developer',
-  description: 'I am a motivated software developer who loves keeping myself up to date with new development technologies. My major interest is in Web Development, with a huge focus on the React.js ecosystem.',
-  resume: 'https://example.com',
+  description:
+    'I am a motivated software developer who loves keeping myself up to date with new development technologies. My major interest is in Web Development. In my spare time, I build projects mainly using various tools with React.js at the forefront.',
+  resume: ResumePDF,
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/christopher-prawira-b7a190158/',
+    github: 'https://github.com/chrimyn234',
   },
 }
 
@@ -20,28 +23,40 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Scholarmode',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Scholarmode is a chrome-based extension that my team built during MAC Hack Sprint 2021. It is meant to provide a platform for people (mainly students) to come together and share their thoughts and discussions on a particular Youtube video.',
+    stack: [
+      'Chrome',
+      'CORS',
+      'Express.js',
+      'Material-UI',
+      'MongoAtlas',
+      'MongoDB',
+      'Mongoose',
+      'Node.js',
+      'oauth',
+      'Passport.js',
+      'React',
+      'Rewire',
+      'Slate.js',
+      'Styled-Components',
+    ],
+    livePreview: 'https://devpost.com/software/scholarmode',
   },
   {
-    name: 'Project 2',
+    name: 'React-Firebase Live-Queue App',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A live-queue app that allows patients to register themselves and take a queue number for a specialist medical check-up in Jakarta, Indonesia.',
+    stack: ['React', 'Chakra-UI', 'Firebase', 'Formik'],
+    livePreview: 'https://registrasidoktertaswinprawira.web.app/',
   },
   {
-    name: 'Project 3',
+    name: 'Travellow',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A map-centric app that shows nearby restaurants, hotels and attractions. It also shows the awards, reviews and pricing for the specific place.',
+    stack: ['Travel Advisor API', 'React', 'Material UI'],
+    sourceCode: 'https://github.com/chrimyn234/Travellow',
   },
 ]
 
@@ -53,18 +68,23 @@ const skills = [
   'JavaScript',
   'TypeScript',
   'React',
-  'Redux',
-  'SASS',
+  'Chakra UI',
   'Material UI',
+  'Express.js',
+  'MongoDB',
+  'Node.js',
   'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Python',
+  'Java',
+  'PHP',
+  'ASP.NET',
+  'Android Development (Java/Kotlin)',
+  'iOS Development (Swift)', 'and many more tools and frameworks...'
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'christopherowenprawira@gmail.com',
 }
 
 export { header, about, projects, skills, contact }
